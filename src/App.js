@@ -26,11 +26,11 @@ class App extends Component {
   }
 
   onAppStoreActions(data) {
-    if (data.action == 'hideLoginPopup') {
+    if (data.action === 'hideLoginPopup') {
       this.setState({loginPopup: false});
     }
 
-    if (data.action == 'showLoginPopup') {
+    if (data.action === 'showLoginPopup') {
       this.setState({loginPopup: true});
     }
   }
@@ -59,7 +59,8 @@ class App extends Component {
               }
             ],
             "questionString": "How can I practice coding (computer programming) daily?",
-            "userId": "test1"
+            "userId": "test1",
+            "questionId":"q1"
           },
           {
             "answers": [
@@ -78,18 +79,11 @@ class App extends Component {
                 "downvoteCount": 0,
                 "upvoteCount": 0,
                 "userId": "test2"
-              },
-              {
-                "answerId": 5,
-                "answerString": "This is the first step for very obvious reason. If you don\u2019t know the basics then you will never know either what to do next or what you are doing wrong. Initially, I do not expect from you to become the master of all java basic stuffs like keywords, core concepts or basic coding techniques. What really I expect from you is just to read all the text available in below links, even if it just doesn\u2019t make sense to you in the first attempt. Just keep reading it.",
-                "createdDate": "03/04/18",
-                "downvoteCount": 0,
-                "upvoteCount": 0,
-                "userId": "test1"
               }
             ],
             "questionString": "What are some tricks to learn Java quickly?",
-            "userId": "test2"
+            "userId": "test2",
+            "questionId":"q2"
           },
           {
             "answers": [
@@ -143,15 +137,17 @@ class App extends Component {
               }
             ],
             "questionString": "Who am i?",
-            "userId": "test1"
+            "userId": "test1",
+            "questionId":"q3"
           },
           {
             "answers": [],
             "questionString": "Who am i?",
-            "userId": "test2"
+            "userId": "test2",
+            "questionId":"q4"
           }
         ]
-      }
+      };
     this.setState({
       loading: false,
       feeds: feeds,

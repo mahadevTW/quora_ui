@@ -7,7 +7,8 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
-    "reflux": "0.2.12"
+    "reflux": "0.2.12",
+    "superagent": "^3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
