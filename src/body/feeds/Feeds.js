@@ -32,6 +32,9 @@ export default class Feeds extends React.Component {
 
   getAnswersForQuestion(question) {
     var answers = question.answers;
+    if (answers.length === 0) {
+      return <span>Be first to answer this question</span>
+    }
     return answers.map((answer, index) => {
       console.log()
       return <Answer key={index} answer={answer}/>
