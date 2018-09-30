@@ -1,6 +1,5 @@
 import Reflux from 'reflux'
 import AppActions from '../actions/AppActions'
-import request from 'superagent'
 
 const AppStore = Reflux.createStore({
   listenables: [AppActions],

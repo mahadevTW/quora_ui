@@ -8,7 +8,7 @@ import Login from './body/Login'
 import Reflux from 'reflux'
 import AppStore from './store/AppStore'
 
-const listener = Reflux.ListenerMixin;
+// const listener = Reflux.ListenerMixin;
 
 class App extends Component {
   constructor() {
